@@ -6,7 +6,7 @@ public class EjercicioAplicacionCajeroAutomatico {
         //Saldo inicial
         var saldo = 1000.0;
 
-        //Deposito maximo
+        //Limites de depositos y retiros
         final var LIMITE_MAXIMO = 5000;
         final var LIMITE_MINIMO = 100;
 
