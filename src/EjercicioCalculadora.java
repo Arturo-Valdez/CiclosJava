@@ -6,7 +6,10 @@ public class EjercicioCalculadora {
         var bandera = false;
 
 
+        //Ciclo infinito hasta que bandera cambie su valor
         while (!bandera){
+
+            //Precentacion
             System.out.print("""
                     \n*** CALCULADORA ***
                     
@@ -21,6 +24,7 @@ public class EjercicioCalculadora {
 
             var operacion = Integer.parseInt(consola.nextLine());
 
+            //Condicional de valor en caso que valores esten dentro del rango solicitado del 1 al 4
             if(operacion >= 1  && operacion <= 4 ) {
                 System.out.print("Ingresa el primer valor: ");
                 var valor1 = Double.parseDouble(consola.nextLine());
@@ -28,6 +32,7 @@ public class EjercicioCalculadora {
                 System.out.print("Ingresa el segundo valor: ");
                 var valor2 = Double.parseDouble(consola.nextLine());
 
+                //Validacion y ejecucion de operacion
                 switch (operacion) {
                     case 1 -> {
                         var suma = valor1 + valor2;
